@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERTION_METHODS</title>
+</head>
+
+<body>
+    <div class="class">
+        <div id="first">
+            I Am The First Element.
+        </div>
+        <nav id="nav">
+        </nav>
+    </div>
+
+    <script>
+        //classic methods
+        let a = document.getElementsByTagName('div')[0];
+        a.innerHTML = a.innerHTML + '<h1>Yo Yo Kono Kumar</h1>';
+
+        //new methods
+        let div = document.createElement('div');
+        div.innerHTML = '<a href="https://www.google.com/">Google Boi</a>';
+        a.append(div);
+        a.prepend(div);
+        a.before(div);
+        a.after(div);
+
+
+        let nav = document.getElementsByTagName('nav')[0];
+        nav.innerHTML = nav.innerHTML + "<h1>Replace me</h1>"; //Replace me
+        let div1 = document.createElement('div');
+        div1.innerHTML = '<a href="https://www.google.com/">Google Boi</a>';
+        nav.append(div1); //Google Boi
+
+        nav.replaceWith(div1);
+    </script>
+</body>
+
+</html>

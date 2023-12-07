@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PROPERTIES</title>
+</head>
+
+<body>
+    <span id="paras">
+        Hiiiii I am Span 
+    </span>
+
+    <div id="p">
+        <h1>KonoHaram</h1>
+    </div>
+    <script>
+        console.dir(document.getElementsByTagName("span")[0]); //it will give you all the properties .
+
+        console.log(document.body.firstChild.nodeName); //node name : #text
+
+
+        let html = document.getElementById("paras").innerHTML;
+        console.log(html); //Hiiiii I am Span 
+        const p = document.getElementById("paras").innerHTML = 'I have changed';
+        console.log(p); //I have changed
+
+        let a = document.getElementsByTagName("h1")[0].outerHTML;
+        console.log('Before outer html', a); // <h1>KonoHaram</h1>
+        let b = document.getElementsByTagName("h1")[0].outerHTML = " <h5><b>Kono Kumar</b></h5>";
+        console.log('after changed outer html', b); // <h5><b>Kono Kumar</b></h5>
+
+        // to get test content
+        console.log('TextContent', document.body.textContent);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake water gun</title>
+</head>
+
+<body>
+    <script>
+        //Create a snake water gun game ;
+        //The game should ask you to enter s w or g the computer should be ramdomly able to generate s w g and declare win or loss using alert .
+        let you = prompt("Enter SNAKE : S, WATER : W or GUN : G");
+        let cpuI = Math.floor(Math.random() * 3);
+        let computer = ["s", "w", "g"][cpuI]
+
+        const match = (computer, you) => {
+            if (computer === you) {
+                return ("Nobody. Match is equal😂")
+            } else if (computer === "s" && you === "w") {
+                return "COMUTER"
+            } else if (computer === "g" && you === "w") {
+                return "YOU"
+            } else if (computer === "s" && you === "g") {
+                return "YOU"
+            } else if (computer === "w" && you === "g") {
+                return "COMPUTER"
+            } else if (computer === "g" && you === "w") {
+                return "YOU"
+            } else if (computer === "s" && you === "w") {
+                return "COMPUTER"
+            } else if (computer === "w" && you === "s") {
+                return "YOU"
+            }
+        }
+        let result = match(computer, you)
+        document.write(`<br>Computer: ${computer} <br> You: ${you} <br>The winner is: ${result.toUpperCase()}`)
+    </script>
+</body>
+
+</html>

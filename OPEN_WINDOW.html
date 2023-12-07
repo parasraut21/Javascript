@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Window Object</h1>
+    <h2>The setTimeout() Method</h2>
+
+    <p>Click the button to open a new window and close the window after three seconds (3000 milliseconds)</p>
+
+    <button onclick="openWin()">Open "myWindow"</button>
+
+    <script>
+        function openWin() {
+            const myWindow = window.open("", "", "width=200, height=100");
+            setTimeout(function() {
+                myWindow.close()
+            }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>

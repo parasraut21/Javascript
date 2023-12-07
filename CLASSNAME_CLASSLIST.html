@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSNAME CLASSLIST</title>
+
+    <style>
+        .yellow {
+            background-color: yellow;
+            color: white;
+        }
+        
+        .red {
+            background-color: red;
+            color: white;
+        }
+        
+        .text-dark {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="yo">
+        <span>Hey I am span</span>
+    </div>
+
+    <script>
+        //className
+        yo.className = 'red text-dark'; // we can assign class names using className keyword ;
+
+        //classlist
+        console.log(yo.classList); //['red', 'text-dark', value: 'red text-dark']
+
+        //classList.add()/remove();
+        yo.classList.add('yellow');
+        yo.classList.remove('red');
+        console.log(yo.classList); //['text-dark', 'yellow', value: 'text-dark yellow']
+
+        //classList.toggle()- adds the class if doesnt exist if exist then remove it ;
+        yo.classList.toggle('red'); //red doesnt exist so it has added ;
+        yo.classList.toggle('red'); //red is present so it has removed ;
+
+        //classList.contains() - checks for the given class , present returns  true else false
+        console.log(yo.classList.contains('yellow')) //true
+        console.log(yo.classList.contains('red')) //false
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET TIMEOUT and SET INTERVAL</title>
+</head>
+<style>
+    #p {
+        align-items: left;
+    }
+</style>
+
+<body>
+    <h1>Wait 3 sec For The sadness!!!</h1>
+    <button onclick="myStopFunction()"><h1>Stop! click here to stop sadness</h1></button>
+    <div id="p">
+    </div>
+    <script>
+        //setTimeout
+        //clearTimeout
+        const mytime = setTimeout(magic, 3000);
+
+        //setTimeout
+        function magic() {
+            let a = document.getElementById('p').outerHTML = '<img src="pp.png" alt="">';
+        }
+        //clearTimeout
+        function myStopFunction() {
+            clearTimeout(mytime);
+            document.write("You Have Successfully Stoped sadness")
+        }
+
+        setInterval(ss, 1000);
+
+        function ss() {
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console_obj_models</title>
+</head>
+
+<body>
+    <script>
+        console.log(console); // to see all the methods associated with console .
+
+        console.error("Hey this is error"); // used for errors
+
+        console.assert(5 > 66) //asserstion error // if condition true then no fail
+
+        console.clear(); // to clear console
+
+        Obj = {
+            "Paras": "Genius",
+            "Gaurav": "Noob",
+            "Gidad": 69,
+            "Khire": "Backchod",
+        }
+
+        console.table(Obj); // to the content in tabular form .
+
+        console.warn("Hey please dont drink alcohol"); // to give warnings
+
+        console.info("Hey this is imp information"); //to give for special info.
+
+        console.time(Obj); // to get time how much a label taken .
+        console.timeEnd(Obj); //0.029052734375 ms
+
+        console.time("ForLopp");
+        for (let i = 0; i < 5; i++) {
+            console.log("233");
+        }
+        console.timeEnd("ForLopp"); //1.7919921875 ms
+    </script>
+</body>
+
+</html>

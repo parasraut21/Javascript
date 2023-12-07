@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Selectors</title>
+    <script src="selectors.js"></script>
+</head>
+
+<body>
+    <div class="div-1">
+        <ul id="id">
+            <h5>1</h5>
+            <h5>1</h5>
+            <h5>1</h5>
+            <h5>1</h5>
+        </ul>
+    </div>
+    <div class="div-2">
+        <ul id="id">
+            <h5>2</h5>
+            <h5>2</h5>
+            <h5>2</h5>
+            <h5>2</h5>
+        </ul>
+        <script>
+            let e;
+
+
+            console.log("Nikal");
+            //single element selector
+            e = document.getElementById('id'); // It will select div 2 id list ;
+            e.style.color = "red"; // it will change colour to red to which e is targeted .
+            e.innerText = "Paras is good boy"; // It will the div 2 tag 2 2 2 2 with paras is good boy .
+            e.innerHTML = "<b>Paras Is Good Boy in bolt </b>" // It will make prevoius line with bolt .
+
+
+            console.log(e.innerText);
+
+            // multi element selector .
+            let q;
+            q = document.querySelector('#id'); // selects very first targeted element .
+            let r = document.querySelectorAll('#id'); //selects all tageted ellements ;
+            console.log(q);
+            console.log(r);
+        </script>
+    </div>
+</body>
+
+</html>
