@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <title>getBoundingClientRect</title>
+</head>
+<style>
+    .box {
+        /*it will retain the original size of box*/
+        box-sizing: border-box;
+        height: 100px;
+        width: 100px;
+        background: #000;
+        box-shadow: inset;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <h2>var_name.getBoundingClientRect-JS-DOM </h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <p id="id">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus corporis modi, architecto, cumque, provident molestiae animi doloremque eligendi neque molestias eius laboriosam officiis! Libero culpa quaerat repellendus esse, laboriosam et!</p>
+    <hr>
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('div.box');
+
+        // const rectangle = box.getBoundingClientRect();
+        // console.log(rectangle);                           // It will give all the values of the rectangle
+
+
+
+        //Timepass
+        // window.addEventListener('scroll', function() {
+        //     console.log(window.innerHeight); // It will the height  // To check where the point the window height and box is changing .
+        //     console.log(box.getBoundingClientRect().top);
+        // })
+
+        let e;
+        e = document.getElementById('id');
+        e.innerText = "Lord_Puneet_Superstar";
+        window.addEventListener("scroll", function() {
+            if (box.getBoundingClientRect().top < window.innerHeight) { // as we scroll down we cloud see the change .
+                box.style.background = "red";
+                console.log(e);
+            }
+        })
+    </script>
+</body>
+
+</html>

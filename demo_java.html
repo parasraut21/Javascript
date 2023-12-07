@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+
+    <title>Javascript</title>
+    <style>
+        .madara {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .madara:hover {
+            color: black;
+            text-align: center;
+            text-decoration-color: blue;
+            background-color: aliceblue;
+            font-size: 16px;
+            padding: 15px 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="centre">Ghost Of Uchiha</h1>
+    <button class="madara">Madara uchiha</button>
+    <div>
+        <script>
+            //int
+            var num1 = 12
+
+            //String
+            var name = "Mdara Uchiha"
+
+            //float
+            var num3 = 69.69
+
+            //boolean
+            var num4 = true
+
+            //To print data we have two ways
+            // 1) console.log(var_name)-->It will print on the console (of the inspect section)
+            console.log(num1)
+            console.log(name)
+
+            // 2) document.write(var_name)-->It will print on webpage
+            document.write(name)
+            document.write(num3)
+
+
+            //addition
+            console.log("The addition is")
+            var add = num1 + num3
+            console.log(add)
+                //division
+            console.log("The division is")
+            console.log(num3 / num1)
+
+            //function var_name()--> set of code will be executes whenever you invoke it
+            function task1() {
+                document.write("<br>This is task 1<br>") //<br> for line break
+            }
+            for (i = 0; i < 5; i++) {
+                task1()
+            }
+
+            //Userinput
+            var username = prompt("Enter username")
+            var password = prompt("Enter password")
+            console.log("The username is", username)
+            console.log("The password is", password)
+
+            //addition userinput
+            //To take userinput we have t use parseInt
+            var a = parseInt(prompt("Enter value of a"))
+            var b = parseInt(prompt("Enter value of b"))
+            console.log("The addition is", (a + b))
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+
+    <title>Javascript</title>
+    <style>
+        .madara {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .madara:hover {
+            color: black;
+            text-align: center;
+            text-decoration-color: blue;
+            background-color: aliceblue;
+            font-size: 16px;
+            padding: 15px 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="centre">Ghost Of Uchiha</h1>
+    <button class="madara">Madara uchiha</button>
+    <div>
+        <script>
+            // // To take actual values for arithematic use parseInt()
+            var a = parseInt(prompt("Enter value of a"))
+            var b = parseInt(prompt("Enter vaue of b"))
+                // console.log("The addition is : ", (a + b))
+                // var add = a + b;
+
+
+            // // conditional statements
+            // if (add % 2 != 0) {
+            //     console.log("The addition of a & b is odd", add)
+            // } else {
+            //     console.log("The addition of a & b is even", add)
+            // }
+
+            // switch case
+            console.log("Enter choice \n 1) Addition \n 2) Subtraction")
+            var ch = prompt("ENTER CHOICE")
+
+            switch (ch) {
+                case LABEL1:
+                    console.log("Addition is ", a + b)
+                    break;
+                case LABEL2:
+                    console.log("Subtration is ", a - b)
+                    break;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
